@@ -1,0 +1,34 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ServletCreate</servlet-name>
+  	<display-name>ServletCreate</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.ServletCreate</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TrackServlet</servlet-name>
+    <servlet-class>com.controller.TrackServlet</servlet-class> <!-- Change to your actual package -->
+</servlet>
+<servlet>
+    <servlet-name>ShipServlet</servlet-name>
+    <servlet-class>com.controller.ShipServlet</servlet-class> <!-- Change to your actual package -->
+</servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ServletCreate</servlet-name>
+  	<url-pattern>/ServletCreate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TrackServlet</servlet-name>
+    <url-pattern>/trackServlet</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>ShipServlet</servlet-name>
+    <url-pattern>/shipServlet</url-pattern>
+</servlet-mapping>
+</web-app>
